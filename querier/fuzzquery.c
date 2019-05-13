@@ -58,7 +58,7 @@ main(const int argc, char *argv[])
   // load an array full of words from the given index file
   wordlist_t *wordlist = wordlist_load(indexFilename);
   if (wordlist == NULL) {
-    fprintf(stderr, "%s cannot load words from index file '%s'\n",
+    fprintf(stderr, "%s cannot load words from dictionary '%s'\n",
             program, indexFilename);
     exit(9);
   }
