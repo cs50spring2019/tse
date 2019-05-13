@@ -14,6 +14,12 @@
 #include "memory.h"
 #include "file.h"
 
+/* The random() and srandom() functions are provided by stdlib,
+ * but for some reason not declared by stdlib.h, so declare here.
+ */
+long int random(void);
+void srandom(unsigned int seed);
+
 /**************** file-local global variables ****************/
 static char *program;
 static const char *UnixDictionary = "/usr/share/dict/words";
